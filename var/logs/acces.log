@@ -399,3 +399,16 @@
 127.0.0.1 - - [07/Oct/2016:14:10:57 +0200] "GET / HTTP/1.1" 200 534
 127.0.0.1 - - [07/Oct/2016:14:10:58 +0200] "GET / HTTP/1.1" 200 534
 127.0.0.1 - - [07/Oct/2016:14:11:49 +0200] "GET / HTTP/1.1" 200 17662
+127.0.0.1 - - [07/Oct/2016:14:44:47 +0200] "GET /index.php/users/list HTTP/1.1" 200 1230
+127.0.0.1 - - [07/Oct/2016:14:45:00 +0200] "GET /index.php/users/edit/1? HTTP/1.1" 200 407
+127.0.0.1 - - [07/Oct/2016:14:47:55 +0200] "GET /index.php/users/new? HTTP/1.1" 200 327
+127.0.0.1 - - [07/Oct/2016:14:50:01 +0200] "POST /index.php/users/save HTTP/1.1" 302 498
+127.0.0.1 - - [07/Oct/2016:14:50:01 +0200] "GET /index.php/users/list HTTP/1.1" 200 1707
+127.0.0.1 - - [07/Oct/2016:14:50:06 +0200] "GET /index.php/users/edit/3? HTTP/1.1" 200 423
+127.0.0.1 - - [07/Oct/2016:14:50:15 +0200] "POST /index.php/users/save?id=3 HTTP/1.1" 302 328
+127.0.0.1 - - [07/Oct/2016:14:50:15 +0200] "GET /index.php/users/list HTTP/1.1" 200 1684
+127.0.0.1 - - [07/Oct/2016:14:50:16 +0200] "GET /index.php/users/edit/3? HTTP/1.1" 200 400
+127.0.0.1 - - [07/Oct/2016:14:50:16 +0200] "POST /index.php/users/save?id=3 HTTP/1.1" 302 328
+127.0.0.1 - - [07/Oct/2016:14:50:16 +0200] "GET /index.php/users/list HTTP/1.1" 200 1684
+127.0.0.1 - - [07/Oct/2016:14:58:57 +0200] "POST /index.php/users/delete/3 HTTP/1.1" 302 328
+127.0.0.1 - - [07/Oct/2016:14:58:57 +0200] "GET /index.php/users/list HTTP/1.1" 200 1230
