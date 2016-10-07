@@ -16,3 +16,8 @@ $app->register(new TwigServiceProvider(), array(
 $app['repository.user'] = function ($app) {
     return new App\Users\Repository\UserRepository($app['db']);
 };
+
+//Ajout des repository
+$app['repository.address'] = function ($app) {
+    return new App\Addresses\Repository\AddressRepository($app['db']);
+};

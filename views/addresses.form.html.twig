@@ -1,0 +1,36 @@
+<h2>Formulaire</h2>
+
+{% if address is defined %}
+<form method="post" name="formulaire" action="{{ url('address.save', {id: address.id}) }}">
+
+    <input type="hidden" name="id" value={{address.id}} />
+
+    <label for="number">Numero : </label>
+    <input type="text" name="number" value={{address.number}} />
+
+    <label for="street">Rue : </label>
+    <input type="text" name="prenom" value={{address.street}}  />
+
+    <label for="city">Ville : </label>
+    <input type="text" name="city" value={{address.city}}  />
+
+    <label for="country">Pays : </label>
+    <input type="text" name="country" value={{address.country}}  />
+    {% else %}
+<form method="post" name="formulaire" action="{{ url('address.save') }}">
+    <label for="number">Numero : </label>
+    <input type="text" name="number" />
+
+    <label for="street">Rue : </label>
+    <input type="text" name="street" />
+
+    <label for="city">Ville : </label>
+    <input type="text" name="city" />
+
+    <label for="country">Pays : </label>
+    <input type="text" name="country" />
+    {% endif %}
+
+    <button type="submit">Envoyer</button>
+
+</form>

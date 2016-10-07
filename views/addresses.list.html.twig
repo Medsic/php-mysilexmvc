@@ -1,0 +1,37 @@
+<h1>Liste des adresses</h1>
+<form method="get" name="formulaire" action="{{ url('address.new') }}">
+  <button type="submit">Ajouter</button>
+</form>
+<table>
+<thead>
+  <tr>
+    <th>ID</th>
+    <th>NUMERO</th>
+    <th>RUE</th>
+    <th>VILLE</th>
+    <th>PAYS</th>
+    <th>ACTION</th>
+  </tr>
+</thead>
+<tbdoy>
+{% for address in addresses %}
+   <tr>
+     <td>{{address.id}}</td>
+     <td>{{address.number}}</td>
+     <td>{{address.street}}</td>
+     <td>{{address.city}}</td>
+     <td>{{address.country}}</td>
+     <td>
+       <form method="post" name="formulaire" action="{{ url('address.delete', {id: address.id}) }}">
+            <button type="submit">Supprimer</button>
+        </form>
+      </td>
+      <td>
+        <form method="get" name="formulaire" action="{{ url('address.edit', {id: address.id}) }}">
+          <button type="submit">Modifier</button>
+        </form>
+      </td>
+   </tr>
+{% endfor %}
+</tbdoy>
+</table>

@@ -20,4 +20,7 @@ return array(
     'App\\Users\\Repository\\' => array($baseDir . '/src/Users/Repository'),
     'App\\Users\\Entity\\' => array($baseDir . '/src/Users/Entity'),
     'App\\Users\\Controller\\' => array($baseDir . '/src/Users/Controller'),
+    'App\\Addresses\\Repository\\' => array($baseDir . '/src/Addresses/Repository'),
+    'App\\Addresses\\Entity\\' => array($baseDir . '/src/Addresses/Entity'),
+    'App\\Addresses\\Controller\\' => array($baseDir . '/src/Addresses/Controller'),
 );
